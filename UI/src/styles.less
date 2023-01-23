@@ -1,0 +1,84 @@
+
+.spacer{
+    flex:1;
+}
+
+.highlight{
+    background-color: #1976d2 !important;
+}
+
+.toolbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+
+    img {
+        margin: 0 16px;
+    }
+
+    .btn {
+        padding: 8px;
+        display: flex;
+        cursor: pointer;
+        min-height: 40px;
+
+        &:hover {
+            background-color: #888;
+            opacity: 0.8;
+        }
+    }
+}
+
+.flex{
+    display: flex;
+}
+
+.vflex{
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    margin: 16px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+
+    svg{
+        path {
+            fill: #eee;
+        }
+    }
+}
+
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card{
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+            path {
+                fill: #888;
+            }
+        }
+   }
+}
+.favorites{
+    background: #3696;
+    min-width: 20%;
+    display: flex;
+    flex-direction: column;
+    max-height: 50vh;
+    overflow: auto;
+}

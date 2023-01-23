@@ -1,0 +1,14 @@
+<div class="card vflex">
+    <h1>Please login</h1>
+    <label>default is admin admin</label>
+    <div>
+      <label>usename</label>
+      <input #username/>
+    </div>
+    <div>
+      <label>password</label>
+      <input #password type="password"/>
+    </div>
+    <input type="button" value="login" (click)="this.loginFunction(username.value,password.value)"/>
+    <input type="button" value="register" (click)="this.registerFunction(username.value,password.value)"/>
+  </div>
