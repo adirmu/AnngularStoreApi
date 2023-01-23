@@ -98,7 +98,6 @@ namespace AnngularStoreApi.Controllers {
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 //interview is the name i gave to the app on github for thier api
                 client.DefaultRequestHeaders.UserAgent.Add(new ProductInfoHeaderValue("interview", "1"));
-                //83711d184cd4974851db61dd21dede90fa5df114 is the code i made for this on github
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("auth", "<enter auth code>");
 
                 HttpResponseMessage response = await client.GetAsync(apiUrl);
